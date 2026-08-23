@@ -59,6 +59,36 @@ I will document the time and space complexity of every implementation and proble
 Example:
 
 ```text
-Traversal
-Time: O(n)
-Space: O(1)
+}
+---
+
+## 🧩 Problem 01 — Find Maximum Element
+
+### Problem
+
+Find the largest element in an array.
+
+### Example
+
+Array: `10, 45, 23, 89, 12`
+
+Output: `89`
+
+### Approach
+
+1. Take the first element as the maximum.
+2. Start checking from the second element.
+3. Compare each element with the current maximum.
+4. If the current element is greater, update the maximum.
+5. After traversing the array, the maximum is the answer.
+
+### C++ Logic
+
+```cpp
+int maximum = arr[0];
+
+for (int i = 1; i < n; i++) {
+    if (arr[i] > maximum) {
+        maximum = arr[i];
+    }
+}
