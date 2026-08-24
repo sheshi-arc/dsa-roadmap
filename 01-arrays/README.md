@@ -243,4 +243,51 @@ while (left < right) {
     right--;
 }
 
+## 🧩 Problem 06 — Linear Search
 
+### Problem
+
+Search for a given element in an array using Linear Search.
+
+If the element is present, return its index.
+If it is not present, display "Element not found".
+
+### Example
+
+Array:
+
+`10, 20, 30, 40, 50`
+
+Target:
+
+`30`
+
+Output:
+
+`Element found at index: 2`
+
+### Approach
+
+1. Start from the first element of the array.
+2. Compare each element with the target.
+3. If `arr[i] == target`, the element is found.
+4. Print its index and stop searching using `break`.
+5. If the loop finishes without finding the target, print "Element not found".
+
+### C++ Logic
+
+```cpp
+bool found = false;
+
+for (int i = 0; i < n; i++) {
+
+    if (arr[i] == target) {
+        cout << "Element found at index: " << i << endl;
+        found = true;
+        break;
+    }
+}
+
+if (!found) {
+    cout << "Element not found in the array." << endl;
+}
