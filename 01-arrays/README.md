@@ -124,3 +124,37 @@ Output: `Minimum = 10`
 - [x] Tested
 - [x] Notes added
 - [x] Uploaded to GitHub
+## 🧩 Problem 03 — Sum of Array
+
+### Problem
+
+Find the sum of all elements present in an array.
+
+### Example
+
+Array: `10, 45, 23, 89, 12`
+
+Calculation:
+
+`10 + 45 + 23 + 89 + 12 = 179`
+
+Output:
+
+`Sum = 179`
+
+### Approach
+
+1. Create a variable `sum` and initialize it to `0`.
+2. Traverse the array from index `0` to `n - 1`.
+3. Add each element to `sum`.
+4. After the loop finishes, `sum` contains the total.
+
+### C++ Logic
+
+```cpp
+int sum = 0;
+
+for (int i = 0; i < n; i++) {
+    sum = sum + arr[i];
+}
+
