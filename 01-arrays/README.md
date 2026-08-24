@@ -157,4 +157,47 @@ int sum = 0;
 for (int i = 0; i < n; i++) {
     sum = sum + arr[i];
 }
+## 🧩 Problem 04 — Find Average of Array
+
+### Problem
+
+Find the average of all elements present in an array.
+
+### Example
+
+Array: `10, 45, 23, 89, 12`
+
+First calculate the sum:
+
+`10 + 45 + 23 + 89 + 12 = 179`
+
+Number of elements:
+
+`5`
+
+Average:
+
+`179 / 5 = 35.8`
+
+### Output
+
+`Average = 35.8`
+
+### Approach
+
+1. Calculate the sum of all elements.
+2. Count the number of elements.
+3. Divide the sum by the number of elements.
+4. Store the result in a `double` to preserve decimal values.
+
+### C++ Logic
+
+```cpp
+int sum = 0;
+
+for (int i = 0; i < n; i++) {
+    sum = sum + arr[i];
+}
+
+double average = (double)sum / n;
 
