@@ -92,3 +92,35 @@ for (int i = 1; i < n; i++) {
         maximum = arr[i];
     }
 }
+## 🧩 Problem 02 — Find Minimum Element
+
+### Problem
+
+Find the smallest element in an array.
+
+### Example
+
+Array: `10, 45, 23, 89, 12`
+
+Output: `Minimum = 10`
+
+### Approach
+
+1. Assume the first element is the minimum.
+2. Start checking from the second element.
+3. Compare each element with the current minimum.
+4. If the current element is smaller, update the minimum.
+5. After traversing the array, the minimum is the answer.
+
+### Complexity
+
+- Time Complexity: `O(n)`
+- Space Complexity: `O(1)`
+
+### Status
+
+- [x] Concept understood
+- [x] Code written
+- [x] Tested
+- [x] Notes added
+- [x] Uploaded to GitHub
