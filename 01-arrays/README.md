@@ -200,4 +200,47 @@ for (int i = 0; i < n; i++) {
 }
 
 double average = (double)sum / n;
+## 🧩 Problem 05 — Reverse an Array
+
+### Problem
+
+Reverse the elements of an array without using another array.
+
+### Example
+
+Original Array:
+
+`10 45 23 89 12`
+
+Reversed Array:
+
+`12 89 23 45 10`
+
+### Approach
+
+We use the **Two Pointer Technique**.
+
+1. Set `left` to the first index.
+2. Set `right` to the last index.
+3. Swap the elements at `left` and `right`.
+4. Move `left` one position forward.
+5. Move `right` one position backward.
+6. Continue until `left` is no longer less than `right`.
+
+### C++ Logic
+
+```cpp
+int left = 0;
+int right = n - 1;
+
+while (left < right) {
+
+    int temp = arr[left];
+    arr[left] = arr[right];
+    arr[right] = temp;
+
+    left++;
+    right--;
+}
+
 
